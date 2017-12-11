@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places you've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your To Do list</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Enter your to dos:</h2>
+          <form id="new-place">
+            <div class="form-group">
+              <label for="toDo">ToDos</label>
+              <input type="text" class="form-control" id="toDo">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+
+
+        </div>
+        <div class="col-md-6">
+          <h2>List of things to do!:</h2>
+          <form id="toDoList">
+            <ul id="toDos">
+
+            </ul>
+            <button type="submit" class="btn btn-primary">Clear Selected</button>
+          </form>
+          <!-- <div id="show-contact">
+            <h2></h2>
+            <p>Landmarks: <span class="landmarks"></span></p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
