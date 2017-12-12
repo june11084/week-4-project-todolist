@@ -7,7 +7,7 @@ function toDo(toDoString) {
 }
 
 toDo.prototype.printToDo = function() {
-  return this.toDo + " " + this.id;
+  return this.toDo;
 }
 
 // user interface logic
@@ -28,10 +28,10 @@ $(document).ready(function() {
     $("input:checkbox[name=listoftodo]:checked").each(function(){
       var checkedToDoList = $(this).val();
       console.log(checkedToDoList);
-      // var parent = document.getElementById("toDos");
-      // var child = document.getElementById(checkedToDoList);
-      // parent.removeChild(child);
-      $("#"+checkedToDoList).fadeOut();
+      var parent = document.getElementById("toDos");
+      var child = document.getElementById(checkedToDoList);
+      parent.removeChild(child);
+      // $("#"+checkedToDoList).fadeOut();
     });
 
   });
